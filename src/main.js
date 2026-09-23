@@ -1,25 +1,22 @@
-import './style.css'
-import { productos } from './datos.js'
-
-const catalogo = document.getElementById('catalogo')
-
 function mostrarProductos(lista) {
-  catalogo.innerHTML = lista.map(p => `
+  const catalogoHTML = lista.map(p => `
     <div class="bg-white rounded-lg shadow p-4 flex flex-col justify-between">
       <div>
-        <h2 class="text-lg font-semibold">${p.nombre}</h2>
-        <p class="text-gray-600">$${p.precio}</p>
+        <h2 class="text-xl font-semibold text-gray-800">${p.nombre}</h2>
+        <p class="text-gray-600 mt-2">$${p.precio}</p>
       </div>
-      <button data-id="${p.id}" class="mt-4 bg-slate-700 text-white py-2 rounded hover:bg-slate-900">
+      <button data-id="${p.id}" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
         Agregar
       </button>
     </div>
-  `).join('')
+  `).join('');
 
-
+  // Insertamos las tarjetas generadas en el contenedor
+  catalogo.innerHTML = catalogoHTML;
 }
 
-mostrarProductos(productos)
+mostrarProductos(productos);
+
 
 // ------------------------------------------------------------
 // EJERCICIO 3 — Armar el pedido

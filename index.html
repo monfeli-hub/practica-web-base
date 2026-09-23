@@ -1,26 +1,33 @@
-<!doctype html>
+El HTML
+
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Práctica web – Informática III</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Productos</title>
 </head>
-<body class="bg-gray-100 min-h-screen flex flex-col text-gray-800">
+<body class="bg-gray-100 font-sans min-h-screen flex flex-col p-4">
 
-  <!-- EJERCICIO 1: Maquetación Movika -->
-  <header class="bg-slate-700 text-white p-6 text-center">
-    <h1 class="text-3xl font-bold tracking-wide">Movika</h1>
-    <p class="text-sm mt-1 text-gray-200">Accesorios de plata para cada ocasión</p>
+  <!-- Header -->
+  <header class="bg-blue-600 text-white p-6 rounded-lg shadow mb-6 text-center">
+    <h1 class="text-3xl font-bold">MOVIKA</h1>
+    <p class="text-sm mt-1">Catálogo oficial de productos</p>
   </header>
 
-  <main class="flex-1 p-6">
-  <div id="catalogo" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"></div>
-</main>
+  <!-- Main con la cuadrícula de 1 col en celular y 3 en md -->
+  <main class="grow">
+    <div id="catalogo" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <!-- Las tarjetas las genera JavaScript -->
+    </div>
+  </main>
 
-  <footer class="bg-gray-800 text-white text-center p-4">
-    Equipo: Bombastic
+  <!-- Footer -->
+  <footer class="mt-8 text-center text-gray-500 text-sm py-4">
+    <p>Desarrollado por Movika</p>
   </footer>
 
+  <!-- Script que conecta con Vite y tu JavaScript -->
   <script type="module" src="/src/main.js"></script>
 </body>
 </html>
