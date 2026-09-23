@@ -17,7 +17,6 @@ function mostrarProductos(lista) {
   `).join('')
 
 
-mostrarProductos(productos)
 }
 
 mostrarProductos(productos)
