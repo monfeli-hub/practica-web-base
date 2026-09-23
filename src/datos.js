@@ -1,14 +1,8 @@
-// Datos de ejemplo de un negocio ficticio ("Papelería Don Beto").
-//
-// EJERCICIO 2: reemplaza estos productos por al menos 6 productos o servicios
-// de TU negocio, con mínimo 2 categorías distintas.
-// Cada objeto necesita: id (número único), nombre, precio y categoria.
-
 export const productos = [
-  { id: 1, nombre: 'Cuaderno profesional',   precio: 45,  categoria: 'Papelería' },
-  { id: 2, nombre: 'Caja de lápices HB',     precio: 60,  categoria: 'Papelería' },
-  { id: 3, nombre: 'Mochila escolar',        precio: 350, categoria: 'Accesorios' },
-  { id: 4, nombre: 'Termo de 600 ml',        precio: 180, categoria: 'Accesorios' },
-  { id: 5, nombre: 'Calculadora científica', precio: 220, categoria: 'Tecnología' },
-  { id: 6, nombre: 'Memoria USB 64 GB',      precio: 130, categoria: 'Tecnología' },
-]
+  { id: 1, nombre: "Anillo minimalista", precio: 280, categoria: "anillos" },
+  { id: 2, nombre: "Anillo doble aro", precio: 320, categoria: "anillos" },
+  { id: 3, nombre: "Collar cadena fina", precio: 450, categoria: "collares" },
+  { id: 4, nombre: "Collar con dije luna", precio: 520, categoria: "collares" },
+  { id: 5, nombre: "Aretes gota", precio: 300, categoria: "aretes" },
+  { id: 6, nombre: "Aretes argolla", precio: 280, categoria: "aretes" },
+];
